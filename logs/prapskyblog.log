@@ -1,0 +1,90 @@
+2019-05-12 21:30:11,188 ERROR: Exception on /user/prapmen [GET] [in /Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/suprapto/try_flask/app/main/routes.py", line 67, in user
+    next_url=next_url, prev_url=prev_url)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/templating.py", line 135, in render_template
+    context, ctx.app)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/templating.py", line 117, in _render
+    rv = template.render(context)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/suprapto/try_flask/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/suprapto/try_flask/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/suprapto/try_flask/app/templates/base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/suprapto/try_flask/app/templates/user.html", line 15, in block "app_content"
+    <p><a href="{{ url_for('edit_profile') }}">Edit your profile</p>
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/helpers.py", line 345, in url_for
+    force_external=external)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'edit_profile'. Did you mean 'main.edit_profile' instead?
+2019-05-12 21:47:46,941 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:72]
+2019-05-12 22:02:06,139 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:72]
+2019-05-12 22:13:06,276 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:72]
+2019-05-13 20:41:47,153 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:72]
+2019-05-13 21:48:52,201 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:75]
+2019-05-13 23:05:11,867 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:75]
+2019-05-13 23:05:21,321 ERROR: Exception on / [GET] [in /Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 1811, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/flask/app.py", line 2087, in preprocess_request
+    rv = func()
+  File "/Users/suprapto/try_flask/app/main/routes.py", line 16, in before_request
+    db.session.commit()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 1026, in commit
+    self.transaction.commit()
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/sqlalchemy/orm/session.py", line 500, in commit
+    self.session.dispatch.after_commit(self.session)
+  File "/Users/suprapto/try_flask/flaskenv/lib/python3.5/site-packages/sqlalchemy/event/attr.py", line 259, in __call__
+    fn(*args, **kw)
+  File "/Users/suprapto/try_flask/app/models.py", line 38, in after_commit
+    for obj in session.__changes['delete']:
+AttributeError: 'SignallingSession' object has no attribute '_SearchableMixin__changes'
+2019-05-13 23:11:26,746 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:75]
+2019-05-14 21:59:59,168 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:76]
