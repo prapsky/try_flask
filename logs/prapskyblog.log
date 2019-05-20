@@ -88,3 +88,5 @@ Traceback (most recent call last):
 AttributeError: 'SignallingSession' object has no attribute '_SearchableMixin__changes'
 2019-05-13 23:11:26,746 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:75]
 2019-05-14 21:59:59,168 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:76]
+2019-05-20 21:22:15,249 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:81]
+2019-05-20 21:42:17,933 INFO: Prapsky Blog Startup [in /Users/suprapto/try_flask/app/__init__.py:81]
